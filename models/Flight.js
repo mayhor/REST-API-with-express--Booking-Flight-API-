@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const FlightScheme = new mongoose.Scheme({
+const FlightSchema = new mongoose.Schema({
     title: String,
     time: String,
     price: Number,
@@ -8,4 +8,4 @@ const FlightScheme = new mongoose.Scheme({
 
 })
 
-module.exports = mongoose.model("Flight", FlightScheme)
+module.exports = mongoose.model("Flight", FlightSchema)
